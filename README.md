@@ -14,15 +14,15 @@ Lo probamos con el Postman y anda todo (GET, POST y PUT).
 
 ## Como probarlo
 1. Bajar los archivos del repo.
-2. Importar la base de datos `tpe3.sql` (es la misma de siempre pero por las dudas la subimos).
+2. Importar la base de datos `db_sql` (es la misma de siempre pero por las dudas la subimos).
 3. Configurar el usuario y contraseña en `app/models/equipoApiModel.php y app/models/zonaApiModel.php` si no le conecta.
 4. Usar Postman para pegarles a las rutas.
 
 ## Lista de Endpoints
 
-Acá explicamos cómo se usan los servicios que creamos:
+Acá explicamos cómo se usan los servicios que creamos.
 
-### 1. Ver todos los equipos
+### 1. Ver todos los equipos 
 Ruta: `GET /api/equipos`
 
 Te devuelve la lista completa.
@@ -39,7 +39,7 @@ Te devuelve los datos de este equipo. Si no existe te tira un 404.
 Ruta: `POST /api/equipos`
 
 Hay que enviarle un JSON en el body con los datos.
-Ejemplo:
+Ejemplo.
 ```json 
     {
     "nombre": "Chacarita Juniors",
@@ -48,6 +48,7 @@ Ejemplo:
     "capitan": "Luciano Perdomo",
     "id_zona": 1
     }
+```
 
 ### 1. Ver las 2 zonas
 Ruta: `GET /api/zona`
@@ -72,3 +73,4 @@ Ejemplo:
     "nombre": "Zona C",
     "descripcion": "Zona C de la Primera División del Fútbol Argentino",
 }
+```
